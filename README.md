@@ -2,6 +2,7 @@
 
  * _Animal Shelter API_
  * _Date Created: July 4th 2021_
+  * _Date Edited: July 9th 2021_
 
 #### By _**Garrett Brown**_
 
@@ -84,14 +85,10 @@ _For assistance, please contact Garrett Brown <garrettpaulbrown@gmail.com>_
 ## Technologies Used
 
 * _Github, VS Code_
-* _Bootstrap, MarkDown_
+* _MarkDown_
 * _Entity Framework_
 * _C#_
-* _Authentication and Authorization_
 * _.NET Core 5.0.1_
-* _ASP.NET Core MVC_
-* _ASP.NET Core Razor Pages_
-* _HTML, CSS_
 
 
 ### License
