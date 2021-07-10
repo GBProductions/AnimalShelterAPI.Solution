@@ -7,24 +7,16 @@
 #### By _**Garrett Brown**_
 
 ## Description
+An API that keeps track of cats and dogs within an animal shelter. Admin has full CRUD functionality (create, read, update, delete) and can search by parameters or by id. Animals are assigned an id, which catalogues their name, species, sex, and age (in years).
 
-
-### User Stories
-
-<details>
-    <summary>Expand</summary>
-
-#### User Stories
-
-</details>
+***
 
 ## Setup/Installation Requirements
-Table of Contents
+
+_Table of Contents_
 * Required Programs
 * Installation of Program
 * Startup
-* API Exploration
-* Endpoints
 
 <details>
     <summary>Expand for Instructions</summary>
@@ -124,14 +116,14 @@ In order to search for animals matching a parameter, use this format:
 GET /api/Animals?{parameter}={search-term}
 ```
 
-####Example:
+#### Example:
 ```
 http://localhost:5001/api/Animals?sex=male
 ```
 
 In order to search for a specific animal matching multiple parameters, add a `&` between searches:
 
-####Example:
+#### Example:
 ```
 http://localhost:5001/api/Animals?sex=male&species=dog
 ```
