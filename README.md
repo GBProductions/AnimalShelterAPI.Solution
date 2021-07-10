@@ -89,6 +89,7 @@ _For assistance, please contact Garrett Brown <garrettpaulbrown@gmail.com>_
 * _Entity Framework_
 * _C#_
 * _.NET Core 5.0.1_
+* _Swashbuckle_
 
 
 ### License

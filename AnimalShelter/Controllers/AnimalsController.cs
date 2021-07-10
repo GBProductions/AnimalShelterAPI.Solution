@@ -8,6 +8,7 @@ using AnimalShelter.Models;
 
 namespace AnimalShelter.Controllers
 {
+    [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
     public class AnimalsController : ControllerBase
@@ -90,6 +91,23 @@ namespace AnimalShelter.Controllers
             return NoContent();
         } 
 
+        /// <summary>
+        /// Creates a specific Animal.
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     POST /Animal
+        ///     {
+        ///        "id": 1,
+        ///        "name": "Jamie"
+        ///     }
+        ///
+        /// </remarks>
+        /// <param name="animal"></param>
+        /// <returns>A newly created Animal</returns>
+        /// <response code="201">Returns the newly created animal</response>
+        /// <response code="400">If the item is animal</response>      
         // POST api/animals
         [HttpPost]
         public async Task<ActionResult<Animal>> Post(Animal animal)
@@ -100,6 +118,11 @@ namespace AnimalShelter.Controllers
             return CreatedAtAction(nameof(GetAnimal), new { id = animal.AnimalId }, animal);
         }
 
+
+        /// <summary>
+        /// Deletes a specific Animal.
+        /// </summary>
+        /// <param name="id"></param>       
         //DELETE: api/Animals/2
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAnimal(int id)
